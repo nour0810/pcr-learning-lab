@@ -89,23 +89,28 @@ Made with ❤️ for students who want to think and work like real molecular bio
 
 ### 📸 Screenshots
 
-#### Welcome Screen
+#### 1. Welcome Screen
 ![Welcome Screen - PCR Learning Laboratory](https://github.com/user-attachments/assets/19f4de48-bcef-4415-8e7e-894cca99430b)
 
-#### Virtual Lab - Pipetting Simulation
+#### 2. PCR Components
 ![Virtual Lab Protocol - Realistic Pipetting](https://github.com/user-attachments/assets/bad01c42-567e-4e12-8e1e-069c59eca739)
 
-#### Gel Electrophoresis Interpretation
+#### 3. PCR Setup
 ![Gel Electrophoresis - Result Analysis](https://github.com/user-attachments/assets/a269c84f-e4e9-4c32-8cc7-ad8c292c19c0)
 
 ---
 
 ### 📁 Repository Structure
 pcr-learning-lab/
+
 ├── index.html          # Complete single-file application
+
 ├── README.md
+
 ├── LICENSE             # MIT License
+
 └── screenshots/        # Demo images
+
 text---
 
 ## 📄 License

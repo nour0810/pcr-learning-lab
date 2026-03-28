@@ -108,13 +108,14 @@ After completing this lab, a student will be able to:
 
 ## 🧪 Screenshots
 
-> *Coming soon — add screenshots of your app here!*
->
-> Tip: Take screenshots of the Welcome screen, a Theory module, the Virtual Lab, and a Gel result. Upload them to a `/screenshots` folder and reference them here:
-> ```markdown
+
+<img width="972" height="907" alt="Image" src="https://github.com/user-attachments/assets/19f4de48-bcef-4415-8e7e-894cca99430b" />
+
+<img width="996" height="935" alt="Image" src="https://github.com/user-attachments/assets/bad01c42-567e-4e12-8e1e-069c59eca739" />
+
+<img width="1796" height="748" alt="Image" src="https://github.com/user-attachments/assets/a269c84f-e4e9-4c32-8cc7-ad8c292c19c0" />
 
 
-> ```
 
 ---
 

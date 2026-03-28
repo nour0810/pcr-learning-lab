@@ -103,15 +103,15 @@ Made with ❤️ for students who want to think and work like real molecular bio
 ### 📁 Repository Structure
 pcr-learning-lab/
 
-├── index.html          # Complete single-file application
+├── index.html         # Complete single-file application
 
 ├── README.md
 
-├── LICENSE             # MIT License
+├── LICENSE            # MIT License
 
-└── screenshots/        # Demo images
+└── screenshots/       # Demo images
 
-text---
+---
 
 ## 📄 License
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.

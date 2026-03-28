@@ -1,0 +1,6 @@
+# GitHub Pages — Jekyll configuration
+# This tells GitHub Pages to serve the site as-is (no Jekyll processing)
+# which is correct for a plain HTML/CSS/JS single-file app.
+
+# Disable Jekyll processing (faster builds, no unexpected transformations)
+plugins: []

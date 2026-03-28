@@ -1,100 +1,83 @@
+
 # 🧬 PCR Learning Laboratory
 ### Powered by [GenoFlow](https://github.com) · Professional Molecular Biology Training Platform
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_App-6366f1?style=for-the-badge)](https://YOUR-USERNAME.github.io/pcr-learning-lab/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
-[![HTML](https://img.shields.io/badge/Built_With-HTML%20%2F%20CSS%20%2F%20JS-f97316?style=for-the-badge)](index.html)
-[![No Dependencies](https://img.shields.io/badge/Dependencies-Zero-06b6d4?style=for-the-badge)](#)
+This educational platform simulates a complete PCR workflow in your browser. No installation needed. Perfect for biology, biotechnology, and medical laboratory students who want to understand PCR deeply instead of just memorizing steps.
 
----
+### 🎯 What You'll Learn
 
-## 📖 About
+By completing all modules, you will be able to:
 
-**PCR Learning Lab** is a fully interactive, single-file web application that teaches Polymerase Chain Reaction (PCR) from zero to lab-ready — designed for biology students, medical trainees, and anyone entering a molecular biology lab for the first time.
+- Explain the molecular mechanism of each PCR step (Denaturation, Annealing, Extension)
+- Calculate exact reagent volumes using the **C₁V₁ = C₂V₂** dilution formula
+- Set up a PCR reaction correctly (order and technique matter!)
+- Design a basic thermal cycling program and calculate primer Tm
+- Interpret agarose gel results and diagnose common failures
+- Understand real-world applications of PCR in diagnostics, forensics, and research
 
-Built as a portfolio project by **GenoFlow**, this app demonstrates how modern web technologies can deliver professional scientific education without any backend, database, or installation required.
+### 📚 Modules Overview
 
----
+| Module | Focus | Key Skills |
+|--------|-------|------------|
+| **01 Theory & Concepts** | What PCR is and how it works | Molecular mechanisms, exponential amplification, history & applications |
+| **02 Mix Calculations** | Precision in reagent volumes | C₁V₁ = C₂V₂ formula, interactive calculator, practice problems |
+| **03 Virtual Lab Protocol** | Hands-on pipetting simulation | Correct order of addition, realistic pipetting, guided tutorial |
+| **04 PCR Programming** | Thermal cycling design | Program builder, temperature profile visualization, primer Tm calculator |
+| **05 Gel Electrophoresis** | Result interpretation | Analyze 4 common gel outcomes (clean band, no band, multiple bands, smear) |
+| **06 Assessment** | Knowledge test | 20-question quiz + Certificate of Completion (80%+ to pass) |
 
-## ✨ Features
+### 🧪 Standard 50 µL PCR Reaction Mix (Master Mix Approach)
 
-| Module | Description |
-|--------|-------------|
-| 📖 **Theory & Concepts** | 5 interactive modules covering PCR basics, the 3-step cycle, exponential amplification, components, and real-world applications |
-| 🧮 **Mix Calculations** | Step-by-step C₁V₁=C₂V₂ guide with an interactive calculator and 4 graded practice problems |
-| 🔬 **Virtual Lab Protocol** | Hands-on pipetting simulation with a 7-step guided tutorial (interactive spotlight + animated arrows), strict error scoring |
-| 💻 **PCR Programming** | Thermal cycler designer with live temperature profile visualization and Tm calculator |
-| 📊 **Gel Electrophoresis** | Animated virtual gel with 5 diagnostic case studies — successful PCR, no amplification, multiple bands, contaminated NTC, smear pattern |
-| 🏆 **Assessment & Certificate** | 20-question exam covering all modules. Score ≥ 80% to earn a printable GenoFlow Proficiency Certificate |
+This is the typical setup you'll practice in the **Mix Calculations** and **Virtual Lab** modules:
 
----
+| Component              | Stock Concentration | Volume (µL) | Final Concentration | Role |
+|------------------------|---------------------|-------------|---------------------|------|
+| Nuclease-Free Water    | -                   | 22          | -                   | Solvent / volume adjustment |
+| 2× Master Mix          | 2×                  | 25          | 1×                  | Contains Taq polymerase, dNTPs, buffer, Mg²⁺ |
+| Forward Primer         | 10 µM               | 1           | 0.2 µM              | Binds to one strand |
+| Reverse Primer         | 10 µM               | 1           | 0.2 µM              | Binds to opposite strand |
+| DNA Template           | ~50 ng/µL           | 1           | ~1 ng/µL            | Source of target sequence |
+| **Total**              | -                   | **50**      | -                   | - |
 
-## 🚀 Live Demo
+**Important order**: Always add **Water first**, **DNA Template last**.
 
-> **[https://YOUR-USERNAME.github.io/pcr-learning-lab/](https://YOUR-USERNAME.github.io/pcr-learning-lab/)**
+### 🔥 The Three Steps of PCR (Repeated 25–35 times)
 
-*(Replace `YOUR-USERNAME` with your GitHub username after deploying)*
+| Step          | Temperature | Duration     | What Happens |
+|---------------|-------------|--------------|--------------|
+| **Denaturation** | 94–96°C    | 30 seconds  | Double-stranded DNA separates into single strands |
+| **Annealing**    | 50–65°C    | 30 seconds  | Primers bind to complementary sequences on single strands |
+| **Extension**    | 72°C       | 1 min/kb    | Taq polymerase synthesizes new DNA strands |
 
----
+**Exponential growth formula**:  
+**Final copies ≈ Initial copies × 2ⁿ** (where n = number of cycles)
 
-## 🛠️ Technology
+### 📊 Common Gel Electrophoresis Results & Troubleshooting
 
-- **100% vanilla HTML / CSS / JavaScript** — zero frameworks, zero dependencies
-- **Single file** (`index.html`) — deploy anywhere, works offline
-- **Responsive** — works on desktop, tablet, and mobile
-- **No build step** — just open the file or serve it statically
+| Gel Observation          | Likely Meaning                     | Common Causes                              | How to Fix |
+|--------------------------|------------------------------------|--------------------------------------------|----------|
+| Single clean band at expected size | Successful PCR                    | Everything optimized                       | - |
+| No bands                 | No amplification                  | Missing polymerase, bad primers, wrong annealing temp, no template | Check reagents, optimize Tm, add fresh template |
+| Multiple / extra bands   | Non-specific amplification        | Annealing temperature too low, too much primer | Increase annealing temp by 2–5°C, reduce primer concentration |
+| Smear (no discrete bands)| Degraded DNA or over-amplification| Old/degraded template, too many cycles    | Use fresh high-quality DNA, reduce cycle number |
+| Band in NTC (no template control) | Contamination                  | Reagent or lab contamination               | Use new reagents, clean workspace |
 
----
+### 🚀 How to Run the Lab
 
-## 📦 How to Deploy on GitHub Pages
+1. Download or clone the repository
+2. Open **`pcr_learning.html`** in any modern web browser (Chrome/Firefox/Edge recommended)
+3. Start with **Theory**, then follow the modules in order
+4. Use the **Virtual Lab** for realistic pipetting practice (tutorial arrows will guide you)
+5. Finish with the **Quiz** to earn your certificate
 
-Follow these steps to publish your own live version:
+**Fully client-side** — works offline after the first load.
 
-### Step 1 — Create the Repository
-1. Go to [github.com](https://github.com) and sign in
-2. Click **"New repository"** (the green button or `+` icon)
-3. Name it: `pcr-learning-lab`
-4. Set visibility to **Public**
-5. ✅ Check **"Add a README file"**
-6. Click **"Create repository"**
+### 🧬 Why This Lab Exists
 
-### Step 2 — Upload the File
-1. In your new repository, click **"Add file" → "Upload files"**
-2. Drag and drop `index.html` from this folder
-3. Also upload `README.md` to replace the auto-generated one
-4. At the bottom, write a commit message: `Initial release: PCR Learning Lab`
-5. Click **"Commit changes"**
+PCR is one of the most transformative techniques in modern biology. It powers COVID-19 testing, forensic DNA analysis, genetic research, and much more. Traditional textbooks often make it feel abstract. This lab makes it **visual, interactive, and practical** so you truly understand the "why" behind every step.
 
-### Step 3 — Enable GitHub Pages
-1. Go to your repository **Settings** tab
-2. Scroll down to **"Pages"** in the left sidebar
-3. Under **"Source"**, select **Branch: `main`** and folder **`/ (root)`**
-4. Click **Save**
-5. Wait ~60 seconds, then refresh — your site is live! 🎉
+Made with ❤️ for students who want to think and work like real molecular biologists.
 
-### Step 4 — Get Your URL
-Your app will be live at:
-```
-https://YOUR-USERNAME.github.io/pcr-learning-lab/
-```
-
-> 💡 **Tip:** Go back to the repository main page, click the gear icon next to "About", and paste your live URL there so visitors can find it easily.
-
----
-
-## 🔧 Local Development
-
-No setup required. Just open the file:
-
-```bash
-# Option 1 — Open directly
-open index.html
-
-# Option 2 — Serve locally (optional, for development)
-npx serve .
-# or
-python3 -m http.server 8080
-```
 
 ---
 
@@ -129,8 +112,10 @@ After completing this lab, a student will be able to:
 >
 > Tip: Take screenshots of the Welcome screen, a Theory module, the Virtual Lab, and a Gel result. Upload them to a `/screenshots` folder and reference them here:
 > ```markdown
-> ![Welcome Screen](screenshots/welcome.png)
-> ![Virtual Lab](screenshots/lab.png)
+<img width="484" height="474" alt="Image" src="https://github.com/user-attachments/assets/712809ae-eacf-4599-b6c9-35482ac6ee4d" />
+<img width="472" height="374" alt="Image" src="https://github.com/user-attachments/assets/3e39cbdb-0ea0-45eb-92eb-dd9af279ae5f" />
+<img width="934" height="1036" alt="Image" src="https://github.com/user-attachments/assets/b1ffc241-c862-4b48-8138-46596ec5965c" />
+
 > ```
 
 ---

@@ -112,9 +112,7 @@ After completing this lab, a student will be able to:
 >
 > Tip: Take screenshots of the Welcome screen, a Theory module, the Virtual Lab, and a Gel result. Upload them to a `/screenshots` folder and reference them here:
 > ```markdown
-<img width="484" height="474" alt="Image" src="https://github.com/user-attachments/assets/712809ae-eacf-4599-b6c9-35482ac6ee4d" />
-<img width="472" height="374" alt="Image" src="https://github.com/user-attachments/assets/3e39cbdb-0ea0-45eb-92eb-dd9af279ae5f" />
-<img width="934" height="1036" alt="Image" src="https://github.com/user-attachments/assets/b1ffc241-c862-4b48-8138-46596ec5965c" />
+
 
 > ```
 
